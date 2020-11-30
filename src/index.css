@@ -1,0 +1,107 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Montseratt", sans-serif;
+}
+
+.app{
+  background-image: url("https://cdn.pixabay.com/photo/2017/12/02/17/47/wintry-2993370_1280.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease-in-out;
+}
+.app.warm{
+background-image: url("https://thumbs.dreamstime.com/b/summer-weather-clouds-sunny-over-field-tall-grass-36171532.jpg");
+
+}
+
+main{
+  min-height:100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+padding:25px;
+}
+
+.search-box{
+  width: 100%;
+  margin: 0 0 75px;   
+}
+
+.search-box, .search-bar{
+ display:block;
+ width: 100%;
+ padding:15px;
+ appearance: none;
+ background:none;
+ border:none;
+ outline:none;
+ background-color: rgba(255, 255, 255, 0.5);
+ border-radius: 0px 0px 16px 16px;
+ margin-top: -25px;
+ box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+color: #313131;
+font-size:20px;
+transition: 0.4s ease-in-out;
+}
+
+.search-box .search-bar:focus{
+ background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location{
+  color: #FFF;
+  font-size:32px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+ .location-box .date{
+  color:#FFF;
+  font-size: 20px;
+  font-weight:300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box{
+  text-align: center;
+}
+
+.weather-box .temp{
+  position: relative;
+  display:inline-block;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  padding: 15px 25px;
+  color: #FFF;
+  font-size: 102px;
+  font-weight:900;
+  box-shadow: 3px 6px rgba(50,58,70,0.5);
+  text-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+   
+}
+
+.weather-box .weather{
+  color:#FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 58, 70, 0.5);
+}
+
+
+
+
+
+/* @media(min-width:768px){
+  .location-box, .date{
+    font-size: 40px;
+    font-weight: 700;
+  }
+} */
